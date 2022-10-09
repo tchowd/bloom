@@ -59,6 +59,9 @@ we are using the decentralized communication & notification protocol for Web3. U
 ####ENS
 The **Ethereum Name Service (ENS)** enables you to have a cross-platform web3 username and profile, to simplify crypto payments for any blockchain, and decentralized websites. ENS supports .ETH names natively, as well as importing DNS names you already own. ENS is integrated in over 300 services, including wallets, dapps, and browsers. We integrated **ENS** technology for authentication to sign into the account.
 
+####Coinbase Cloud 
+Committed to empowering crypto developers by making it easier and faster for them to build their applications. Developers can integrate with the APIs powering Coinbase from a single documentation site. We used **Coinbase Cloud API** to connect to **Coinbase wallet**
+
 ## Technologies
 
 This project is built with the following open source libraries, frameworks and languages. User choice of framework used, available in plain js or typescript.
