@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import { Box, SimpleGrid, Icon, Text, Stack, Flex, Container } from '@chakra-ui/react';
-import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
+import { FcCollaboration, FcDonate, FcInTransit } from 'react-icons/fc';
 
 interface FeatureProps {
   title: string;
@@ -31,33 +31,33 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 export default function SimpleThreeColumns() {
   return (
     <>
-    <Container maxW={'6xl'} style={{marginTop: '6rem', marginBottom: '6rem'}}>
-    <Box p={4}>
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-        <Feature
-          icon={<Icon as={FcAssistant} w={10} h={10} />}
-          title={'Lifetime Support'}
-          text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-          }
-        />
-        <Feature
-          icon={<Icon as={FcDonate} w={10} h={10} />}
-          title={'Unlimited Donations'}
-          text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-          }
-        />
-        <Feature
-          icon={<Icon as={FcInTransit} w={10} h={10} />}
-          title={'Instant Delivery'}
-          text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-          }
-        />
-      </SimpleGrid>
-    </Box>
-    </Container>
+      <Container maxW={'6xl'} style={{ marginTop: '6rem', marginBottom: '6rem' }}>
+        <Box p={4}>
+          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+            <Feature
+              icon={<Icon as={FcCollaboration} w={10} h={10} />}
+              title={'Intuitive'}
+              text={
+                'Solution based platform built by builders for builders'
+              }
+            />
+            <Feature
+              icon={<Icon as={FcDonate} w={10} h={10} />}
+              title={'Rewarding'}
+              text={
+                'Used of incentives to contributors for helping their peers to solve the issues.'
+              }
+            />
+            <Feature
+              icon={<Icon as={FcInTransit} w={10} h={10} />}
+              title={'Timely'}
+              text={
+                'Created to minimize time on researching and spend it more on creating. '
+              }
+            />
+          </SimpleGrid>
+        </Box>
+      </Container>
     </>
   );
 }

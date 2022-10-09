@@ -91,7 +91,7 @@ export default function WithSpeechBubbles() {
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
           <Heading>Developers Have Spoken</Heading>
-          <Text>We have been working with clients around the world</Text>
+          <Text>Come see what the hype is about:</Text>
         </Stack>
         <Stack
           direction={{ base: 'column', md: 'row' }}
@@ -100,48 +100,44 @@ export default function WithSpeechBubbles() {
             <TestimonialContent children={undefined}>
               <TestimonialHeading children={undefined}>Efficient Collaborating</TestimonialHeading>
               <TestimonialText children={undefined}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                Very easy to use, very instinctive. And I saved lots of research around Discord servers. Great tool for devs. Thanks!
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
-              src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+              src={'Bernardo.jpg'
               }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              name={'Bernardo'}
+              title={'Developer'}
             />
           </Testimonial>
           <Testimonial children={undefined}>
             <TestimonialContent children={undefined}>
               <TestimonialHeading children={undefined}>Intuitive Design</TestimonialHeading>
               <TestimonialText children={undefined}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                This was so easy to use, I'm so glad I found Bloom, I've been growing more than ever.
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                ''
               }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              name={'Jane'}
+              title={'Developer'}
             />
           </Testimonial>
           <Testimonial children={undefined}>
             <TestimonialContent children={undefined}>
               <TestimonialHeading children={undefined}>Mindblowing Service</TestimonialHeading>
               <TestimonialText children={undefined}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-                neque sed imperdiet nibh lectus feugiat nunc sem.
+                I can't believe how fast I got a response on my question!
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                ''
               }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              name={'German'}
+              title={'Developer'}
             />
           </Testimonial>
         </Stack>
