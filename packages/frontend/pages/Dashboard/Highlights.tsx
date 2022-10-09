@@ -9,7 +9,9 @@ import { Text } from '@chakra-ui/react';
 function Highlights() {
   return (
     <>
-        <Text> Overview</Text>
+         <Text> 
+            Good morning, !
+        </Text>
         <HStack style={{marginTop: '2rem'}}>
             <VStack>
                     <Box

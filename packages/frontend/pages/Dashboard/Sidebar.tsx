@@ -7,6 +7,7 @@ import {
   HStack,
   useColorModeValue,
   useColorMode,
+  Image,
   Link,
   Button,
   Drawer,
@@ -37,9 +38,9 @@ interface LinkItemProps {
 }
 const LinkItems: Array<LinkItemProps> = [
   { name: 'Home', icon: FiHome },
-  { name: 'Trending', icon: FiTrendingUp },
+  { name: 'Dashboard', icon: FiTrendingUp },
   { name: 'Explore', icon: FiCompass },
-  { name: 'Favourites', icon: FiStar },
+  { name: 'Profile', icon: FiStar },
   { name: 'Settings', icon: FiSettings },
 ];
 
@@ -57,7 +58,7 @@ export default function SidebarWithHeader({
         onClose={() => onClose}
         display={{ base: 'none', md: 'block' }}
       />
-      <Drawer
+      {/* <Drawer
         autoFocus={false}
         isOpen={isOpen}
         placement="left"
@@ -66,10 +67,10 @@ export default function SidebarWithHeader({
         onOverlayClick={onClose}
         size="full" 
         children={undefined}>
-        <DrawerContent>
+        <DrawerContent> */}
           <SidebarContent onClose={onClose} />
-        </DrawerContent>
-      </Drawer>
+        {/* </DrawerContent> */}
+      {/* </Drawer> */}
 
       {/* mobilenav */}
       <MobileNav onOpen={onOpen} />
@@ -90,9 +91,10 @@ interface SidebarProps extends BoxProps {
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
     <>
+    <div style={{backgroundColor: 'linear-gradient(180deg, rgba(189,0,224,0.5256303204875701) 28%, rgba(0,7,255,0.4640056706276261) 100%); '}}>
     <Box
       transition="3s ease"
-      bg={useColorModeValue('white', 'gray.900')}
+      bg={useColorModeValue('', 'purple.900')}
       borderRight="1px"
       borderRightColor={useColorModeValue('gray.200', 'gray.700')}
       w={{ base: 'full', md: 60 }}
@@ -101,30 +103,37 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       {...rest}>
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
 
-        <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
-          Logo
-        </Text>
+      <Image
+                borderRadius="lg"
+                src='/static/bloom.png'
+                alt="some good alt text"
+                objectFit="contain"
+                width={'10rem'}
+              /> 
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
+
       {LinkItems.map((link) => (
-        <NavItem key={link.name} icon={link.icon} children={''}>
+        <NavItem key={link.name} icon={link.icon} style={{marginTop: '1rem'}}>
           {link.name}
         </NavItem>
       ))}
        
     </Box>
-      
+    </div>
     </>
   );
 };
 
 interface NavItemProps extends FlexProps {
+  // name: LinkItemProps
   icon: IconType;
   children: ReactText;
 }
 const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
   return (
-    <Link href="#" style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
+    <>
+    <Link href={children} style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
       <Flex
         align="center"
         p="4"
@@ -133,7 +142,7 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
         role="group"
         cursor="pointer"
         _hover={{
-          bg: 'blue.400',
+          bg: 'purple.400',
           color: 'white',
         }}
         {...rest}>
@@ -145,6 +154,9 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
       </Flex>
       
     </Link>
+    
+
+    </>
   );
 };
 
@@ -155,6 +167,7 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
+    <div  style={{backgroundColor: 'linear-gradient(180deg, rgba(189,0,224,0.5256303204875701) 28%, rgba(0,7,255,0.4640056706276261) 100%); '}}>
     <Flex
       ml={{ base: 0, md: 60 }}
       px={{ base: 4, md: 4 }}
@@ -198,5 +211,6 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
       </HStack>
       <ConnectButton />
     </Flex>
+    </div>
   );
 };

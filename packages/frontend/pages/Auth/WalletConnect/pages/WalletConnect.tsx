@@ -23,22 +23,21 @@ import UseSwitchNetwork from '../sections/UseSwitchNetwork'
 // import UseToken from '../sections/UseToken'
 // import UseTransaction from '../sections/UseTransaction'
 import { Link } from '@chakra-ui/react'
+import { NextResponse, NextRequest } from 'next/server'
+import { useRouter } from 'next/router'
+
 export default function WalletConnect() {
   const { isConnected } = useAccount()
+
+  const router = useRouter()
+  
   if (isConnected) {
-
+    router.push('/Dashboard')
   }
-
-  const history = useHistory();
-
-  function handleClick() {
-    history.push("/home");
-  }
+ 
   return isConnected ? (
     <>
-    <NextLink href='/home' passHref>
-      <Link>Home</Link>
-    </NextLink>
+      
     </>
   ) : (
     <ConnectButton />
