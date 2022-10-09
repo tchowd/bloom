@@ -2,23 +2,23 @@
 
 ## Vision
 
-Bloom is a solution based platform built by builders for builders. It is meant to minimize time on researching and spend it more on creating. The platform is bridging communication between the builders and the core developers to help both parties to build further, faster. It also meant to incentivize contributors for helping their peers to solve the issues. 
-- Biderectional communication between protocols and builders
-- Validated responses
-- No wait time to move on with implementation of new ideas
-- Incentive mechanism creates engaged community of builders helping to build the ecosystem
+Bloom is a platform built by builders for builders. The platform is bridging communication between the builders and the core developers to help both parties to build better products faster. Similiar to stackoverflow but for web3 development. It is built on web3 principles of community, by incentivizing contributors to help their peers bringing better products to the ecosystem. It is meant to advance developer experience and grow the builders community around your project.
+
 
 
 ## Problem
-Currently to build on a new techology you need to read an immense amount of documentation or search for answers in multiple unreliable sources. Teams need to allocate resources and time trying to answer often repetitive questions or end up directing people to read the documentation. It also takes debeloper's time from building to updating the documentation. That slows down the process for builders and core teams 
-For the developers there is a lack of clarity and reliability on sources of information. Sifting through forums or trying to connect with the team on their social channels to getting the answer is unclear, leaving them asking wen to build. And no incentive to contribute to the community
-
-For the teams, answering the question, especially technical takes developers  time from working on a project and requires additional resources to monitor multiple channels.
+Currently to build on a new techology developers need to read an immense amount of documentation or search for answers in multiple unreliable sources. 
+There is a lack of clarity and reliability on sources of information. Sifting through forums or trying to connect with the team on their social channels time to get the answer is unclear, leaving them asking wen to build. At the same time companies need to allocate resources and time trying to answer often repetitive questions or updating documentation. That slows down the process for both builders and core teams
 
 For both parties time is spent ineeficiently instead of innovative.
+
 ## Solution
 Bloom is a solution based platform for builders, where they can find the answers in one place, validated by the community and verified by the project's core team. No more scrolling through multiple forums or channels. 
 Developers that contribute by answeering their peers get rewarded by the protocols. That way you are not only contributing to the ecosysytem development but also get recognition from projects for your contribution. 
+- Validated responses
+- No wait time to move on with implementation of new ideas
+- Biderectional communication between protocols and builders
+- Incentive mechanism creates engaged community of builders helping to build the ecosystem
 
 ## Experience:
 As a dev contributor:
