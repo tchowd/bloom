@@ -5,6 +5,7 @@ import {
   Text,
   VStack,
   Image,
+  Link,
 } from '@chakra-ui/react';
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
@@ -17,11 +18,13 @@ function Projects() {
 
   return (
     <>
-      <Text></Text>
-      <HStack style={{ marginTop: '2rem' }}>
+    <div style={{marginTop: '2rem'}}>
+     <Text as='b' fontSize='3xl' >Partners in our Community</Text>
+
+      <HStack style={{ marginTop: '1rem' }}>
 
         <HStack style={{ overflow: 'scroll' }}>
-
+          <Link href='/Partners/Polygon'>
           <Box
             position={'relative'}
             rounded={'2xl'}
@@ -40,6 +43,7 @@ function Projects() {
               overflow="hidden"
               style={{ borderRadius: '0.8rem' }}
             />
+            
             <Box w="100%">
               <Box borderRadius="lg"
                 overflow="hidden"
@@ -50,7 +54,9 @@ function Projects() {
               </Box>
             </Box>
           </Box>
+          </Link>
 
+          <Link href='/Partners/Polygon'>
           <Box
             position={'relative'}
             rounded={'2xl'}
@@ -79,7 +85,9 @@ function Projects() {
               </Box>
             </Box>
           </Box>
+          </Link>
 
+          <Link href='/Partners/Polygon'>
           <Box
             position={'relative'}
             rounded={'2xl'}
@@ -108,7 +116,9 @@ function Projects() {
               </Box>
             </Box>
           </Box>
+          </Link>
 
+          <Link href='/Partners/Polygon'>
           <Box
             position={'relative'}
             rounded={'2xl'}
@@ -137,7 +147,9 @@ function Projects() {
               </Box>
             </Box>
           </Box>
+          </Link>
 
+          <Link href='/Partners/Polygon'>
           <Box
             position={'relative'}
             rounded={'2xl'}
@@ -166,7 +178,9 @@ function Projects() {
               </Box>
             </Box>
           </Box>
+          </Link>
 
+          <Link href='/Partners/Polygon'>
           <Box
             position={'relative'}
             rounded={'2xl'}
@@ -195,7 +209,9 @@ function Projects() {
               </Box>
             </Box>
           </Box>
+          </Link>
 
+          <Link href='/Partners/Polygon'>
           <Box
             position={'relative'}
             rounded={'2xl'}
@@ -224,7 +240,9 @@ function Projects() {
               </Box>
             </Box>
           </Box>
+          </Link>
 
+          <Link href='/Partners/'>
           <Box
             position={'relative'}
             rounded={'2xl'}
@@ -253,7 +271,9 @@ function Projects() {
               </Box>
             </Box>
           </Box>
+          </Link>
 
+          <Link href='/Partners/'>
           <Box
             position={'relative'}
             rounded={'2xl'}
@@ -282,12 +302,14 @@ function Projects() {
               </Box>
             </Box>
           </Box>
+          </Link>
         </HStack>
 
 
 
 
       </HStack>
+      </div>
     </>
   )
 }
