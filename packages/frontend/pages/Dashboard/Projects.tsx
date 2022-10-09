@@ -7,10 +7,13 @@ import {
   } from '@chakra-ui/react';
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-  
+import InfiniteScroll from 'react-infinite-scroll-component';
+
 function Projects() {
 
-    
+const ref = useRef(null);
+  const { scrollXProgress } = useScroll({ container: ref });
+
   return (
     <>
         <Text> sdf</Text>
