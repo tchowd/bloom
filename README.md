@@ -14,7 +14,7 @@ For both parties time is spent ineeficiently instead of innovative.
 
 ## Solution
 Bloom is a solution based platform for builders, where they can find the answers in one place, validated by the community and verified by the project's core team. No more scrolling through multiple forums or channels. 
-Developers that contribute by answeering their peers get rewarded by the protocols. That way you are not only contributing to the ecosysytem development but also get recognition from projects for your contribution. 
+Developers that contribute by answeering their peers get rewarded by the protocols. That way you are not only contributing to the ecosystem development but also get recognition from projects for your contribution. 
 - Validated responses
 - No wait time to move on with implementation of new ideas
 - Biderectional communication between protocols and builders
