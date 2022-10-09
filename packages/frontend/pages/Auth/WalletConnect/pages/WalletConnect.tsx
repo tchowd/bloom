@@ -20,18 +20,25 @@ import UseSigner from '../sections/UseSigner'
 import UseSignMessage from '../sections/UseSignMessage'
 import UseSignTypedData from '../sections/UseSignTypedData'
 import UseSwitchNetwork from '../sections/UseSwitchNetwork'
-import UseToken from '../sections/UseToken'
-import UseTransaction from '../sections/UseTransaction'
-
+// import UseToken from '../sections/UseToken'
+// import UseTransaction from '../sections/UseTransaction'
+import { Link } from '@chakra-ui/react'
 export default function WalletConnect() {
   const { isConnected } = useAccount()
+  if (isConnected) {
 
+  }
+
+  const history = useHistory();
+
+  function handleClick() {
+    history.push("/home");
+  }
   return isConnected ? (
     <>
-      <Link href="/">
-      
-        <Dashboard />
-      </Link>
+    <NextLink href='/home' passHref>
+      <Link>Home</Link>
+    </NextLink>
     </>
   ) : (
     <ConnectButton />
