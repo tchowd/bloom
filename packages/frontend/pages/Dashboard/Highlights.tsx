@@ -1,76 +1,76 @@
 import React from 'react'
 import {
-    Box,
-    HStack,
-    VStack,
-  } from '@chakra-ui/react';
+  Box,
+  HStack,
+  VStack,
+} from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react';
-  
+
 function Highlights() {
   return (
     <>
-         <Text> 
-            Good morning, !
-        </Text>
-        <HStack style={{marginTop: '2rem'}}>
-            <VStack>
-                    <Box
-                position={'relative'}
-                rounded={'2xl'}
-                borderWidth='0.2rem'
-                borderColor='gray.200'
-                overflow={'hidden'}
-                _hover={{boxShadow: 'lg'}}
-            >
-                    <Box w="100%">
-                    <Box  borderRadius="lg" 
-                    overflow="hidden"
-                    height="8rem"
-                    rounded='90px'
-                    width="30rem">
-                        sdf
-                    </Box>
-                    </Box>
+      <Text>
+        Good morning, Xian!
+      </Text>
+      <HStack style={{ marginTop: '2rem' }}>
+        <VStack>
+          <Box
+            position={'relative'}
+            rounded={'2xl'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            overflow={'hidden'}
+            _hover={{ boxShadow: 'lg' }}
+          >
+            <Box w="100%">
+              <Box borderRadius="lg"
+                overflow="hidden"
+                height="8rem"
+                rounded='90px'
+                width="30rem">
+                sdf
+              </Box>
             </Box>
-            <Box
-                position={'relative'}
-                rounded={'2xl'}
-                borderWidth='0.2rem'
-                borderColor='gray.200'
-                overflow={'hidden'}
-                _hover={{boxShadow: 'lg'}}
-            >
-                    <Box w="100%">
-                    <Box  borderRadius="lg" 
-                            overflow="hidden"
-                            height="8rem"
-                            rounded='90px'
-                            width="30rem">
-                    </Box>
-                    </Box>
+          </Box>
+          <Box
+            position={'relative'}
+            rounded={'2xl'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            overflow={'hidden'}
+            _hover={{ boxShadow: 'lg' }}
+          >
+            <Box w="100%">
+              <Box borderRadius="lg"
+                overflow="hidden"
+                height="8rem"
+                rounded='90px'
+                width="30rem">
+              </Box>
             </Box>
-            </VStack>
+          </Box>
+        </VStack>
 
-            <Box
-                position={'relative'}
-                rounded={'2xl'}
-                borderWidth='0.2rem'
-                borderColor='gray.200'
-                overflow={'hidden'}
-                _hover={{boxShadow: 'lg'}}
-            >
-                    <Box w="100%">
-                    <Box  borderRadius="lg" 
-                            overflow="hidden"
-                            height="17rem"
-                            rounded='90px'
-                            width="70rem">
-                    
-                    </Box>
-                    </Box>
+        <Box
+          position={'relative'}
+          rounded={'2xl'}
+          borderWidth='0.2rem'
+          borderColor='gray.200'
+          overflow={'hidden'}
+          _hover={{ boxShadow: 'lg' }}
+        >
+          <Box w="100%">
+            <Box borderRadius="lg"
+              overflow="hidden"
+              height="17rem"
+              rounded='90px'
+              width="70rem">
+
             </Box>
-      
-        
+          </Box>
+        </Box>
+
+
       </HStack>
     </>
   )
