@@ -53,7 +53,9 @@ export default function SidebarWithHeader({
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Box  >
+    <>
+    <Box>
+   
       <SidebarContent
         onClose={() => onClose}
         display={{ base: 'none', md: 'block' }}
@@ -68,19 +70,24 @@ export default function SidebarWithHeader({
         size="full" 
         children={undefined}>
         <DrawerContent> */}
+       
           <SidebarContent onClose={onClose} />
         {/* </DrawerContent> */}
       {/* </Drawer> */}
 
       {/* mobilenav */}
       <MobileNav onOpen={onOpen} />
-      <Box ml={{ base: 0, md: 60 }} p="4">
+      {/* <Box ml={{ base: 0, md: 60 }} p="4"> */}
         {/* {children}      */}
         {/* <TableSection /> */}
         {/* <Highlights /> */}
         {/* <Projects /> */}
-      </Box>
+      {/* </Box> */}
+      
+      {/* <ConnectButton /> */}
     </Box>
+  
+    </>
   );
 }
 
@@ -91,6 +98,7 @@ interface SidebarProps extends BoxProps {
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
     <>
+
     <div style={{backgroundColor: 'linear-gradient(180deg, rgba(189,0,224,0.5256303204875701) 28%, rgba(0,7,255,0.4640056706276261) 100%); '}}>
     <Box
       transition="3s ease"
@@ -121,6 +129,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
        
     </Box>
     </div>
+    
     </>
   );
 };
@@ -150,11 +159,10 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
         {children}
 
        
-
       </Flex>
-      
     </Link>
-    
+
+
 
     </>
   );
@@ -174,31 +182,22 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
       height="20"
       alignItems="center"
       // bg={useColorModeValue('white', 'gray.900')}
-      borderBottomWidth="1px"
+      // borderBottomWidth="1px"
       // borderBottomColor={useColorModeValue('gray.200', 'gray.700')}
       justifyContent={{ base: 'space-between', md: 'flex-end' }}
       {...rest}>
 
-      <IconButton
+      {/* <IconButton
         display={{ base: 'flex', md: 'none' }}
         onClick={onOpen}
         variant="outline"
         aria-label="open menu"
         icon={<FiMenu />}
-      />
-
+      /> */}
+    <HStack style={{marginRight: '2rem', overflow: "visible", zIndex: '1'}}>
       <Button onClick={toggleColorMode}>
           {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
         </Button>
-    
-      <Text
-        display={{ base: 'flex', md: 'none' }}
-        fontSize="2xl"
-        fontFamily="monospace"
-        fontWeight="bold">
-        Logo
-      </Text>
-
       <HStack spacing={{ base: '0', md: '6' }}>
         <IconButton
           size="lg"
@@ -206,10 +205,10 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
           aria-label="open menu"
           icon={<FiBell />}
         />
-        
-
+      
       </HStack>
-      <ConnectButton />
+      </HStack>
+      {/* <ConnectButton /> */}
     </Flex>
     </div>
   );

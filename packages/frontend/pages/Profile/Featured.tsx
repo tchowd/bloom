@@ -35,8 +35,8 @@ const ref = useRef(null);
                 src='/static/8.png'
                 alt="some good alt text"
                 objectFit="contain"
-                width={'30rem'}
-                height={'15rem'}
+                width={'1rem'}
+                height={'20rem'}
                 overflow="hidden"
                 style={{borderRadius: '0.8rem'}}
               /> 
@@ -44,9 +44,8 @@ const ref = useRef(null);
                     <Box  borderRadius="lg" 
                     overflow="hidden"
                     rounded='90px'
-                    width="30rem"
+                    width="15rem"
                     >
-                        
                     </Box>
                     </Box>
             </Box>
@@ -65,7 +64,7 @@ const ref = useRef(null);
                 alt="some good alt text"
                 objectFit="contain"
                 width={'30rem'}
-                height={'15rem'}
+                height={'20rem'}
                 overflow="hidden"
                 style={{borderRadius: '0.8rem'}}
               /> 
@@ -73,7 +72,7 @@ const ref = useRef(null);
                     <Box  borderRadius="lg" 
                     overflow="hidden"
                     rounded='90px'
-                    width="30rem"
+                    width="15rem"
                     >
                         
                     </Box>
@@ -94,7 +93,7 @@ const ref = useRef(null);
                 alt="some good alt text"
                 objectFit="contain"
                 width={'30rem'}
-                height={'15rem'}
+                height={'20rem'}
                 overflow="hidden"
                 style={{borderRadius: '0.8rem'}}
               /> 
@@ -102,7 +101,7 @@ const ref = useRef(null);
                     <Box  borderRadius="lg" 
                     overflow="hidden"
                     rounded='90px'
-                    width="30rem"
+                    width="15rem"
                     >
                         
                     </Box>
@@ -123,7 +122,7 @@ const ref = useRef(null);
                 alt="some good alt text"
                 objectFit="contain"
                 width={'30rem'}
-                height={'15rem'}
+                height={'20rem'}
                 overflow="hidden"
                 style={{borderRadius: '0.8rem'}}
               /> 
@@ -131,41 +130,14 @@ const ref = useRef(null);
                     <Box  borderRadius="lg" 
                     overflow="hidden"
                     rounded='90px'
-                    width="30rem"
+                    width="15rem"
                     >
                         
                     </Box>
                     </Box>
             </Box>
 
-            <Box
-                position={'relative'}
-                rounded={'2xl'}
-                borderWidth='0.2rem'
-                borderColor='gray.200'
-                overflow={''}
-                _hover={{boxShadow: 'lg'}}
-            >
-                <Image
-                borderRadius="lg"
-                src='/static/2.png'
-                alt="some good alt text"
-                objectFit="contain"
-                width={'30rem'}
-                height={'15rem'}
-                overflow="hidden"
-                style={{borderRadius: '0.8rem'}}
-              /> 
-                    <Box w="100%">
-                    <Box  borderRadius="lg" 
-                    overflow="hidden"
-                    rounded='90px'
-                    width="30rem"
-                    >
-                        
-                    </Box>
-                    </Box>
-            </Box>
+            
 
             <Box
                 position={'relative'}
@@ -181,7 +153,7 @@ const ref = useRef(null);
                 alt="some good alt text"
                 objectFit="contain"
                 width={'30rem'}
-                height={'15rem'}
+                height={'20rem'}
                 overflow="hidden"
                 style={{borderRadius: '0.8rem'}}
               /> 
@@ -189,94 +161,7 @@ const ref = useRef(null);
                     <Box  borderRadius="lg" 
                     overflow="hidden"
                     rounded='90px'
-                    width="30rem"
-                    >
-                        
-                    </Box>
-                    </Box>
-            </Box>
-
-            <Box
-                position={'relative'}
-                rounded={'2xl'}
-                borderWidth='0.2rem'
-                borderColor='gray.200'
-                overflow={''}
-                _hover={{boxShadow: 'lg'}}
-            >
-                <Image
-                borderRadius="lg"
-                src='/static/9.png'
-                alt="some good alt text"
-                objectFit="contain"
-                width={'30rem'}
-                height={'15rem'}
-                overflow="hidden"
-                style={{borderRadius: '0.8rem'}}
-              /> 
-                    <Box w="100%">
-                    <Box  borderRadius="lg" 
-                    overflow="hidden"
-                    rounded='90px'
-                    width="30rem"
-                    >
-                        
-                    </Box>
-                    </Box>
-            </Box>
-
-            <Box
-                position={'relative'}
-                rounded={'2xl'}
-                borderWidth='0.2rem'
-                borderColor='gray.200'
-                overflow={''}
-                _hover={{boxShadow: 'lg'}}
-            >
-                <Image
-                borderRadius="lg"
-                src='/static/10.png'
-                alt="some good alt text"
-                objectFit="contain"
-                width={'30rem'}
-                height={'15rem'}
-                overflow="hidden"
-                style={{borderRadius: '0.8rem'}}
-              /> 
-                    <Box w="100%">
-                    <Box  borderRadius="lg" 
-                    overflow="hidden"
-                    rounded='90px'
-                    width="30rem"
-                    >
-                        
-                    </Box>
-                    </Box>
-            </Box>
-
-            <Box
-                position={'relative'}
-                rounded={'2xl'}
-                borderWidth='0.2rem'
-                borderColor='gray.200'
-                overflow={''}
-                _hover={{boxShadow: 'lg'}}
-            >
-                <Image
-                borderRadius="lg"
-                src='/static/11.png'
-                alt="some good alt text"
-                objectFit="contain"
-                width={'30rem'}
-                height={'15rem'}
-                overflow="hidden"
-                style={{borderRadius: '0.8rem'}}
-              /> 
-                    <Box w="100%">
-                    <Box  borderRadius="lg" 
-                    overflow="hidden"
-                    rounded='90px'
-                    width="30rem"
+                    width="15rem"
                     >
                         
                     </Box>

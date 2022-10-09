@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import {
     client, recommendProfiles
-} from '../api'
+} from '../../api'
 import Link from 'next/link'
 import { Image } from '@chakra-ui/react'
 
@@ -26,7 +26,7 @@ function ProfileDetails() {
 
     return (
         <div>
-            <Navigation />
+            {/* <Navigation /> */}
             <div>
                 <div>
                     {

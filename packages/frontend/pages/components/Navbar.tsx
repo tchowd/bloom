@@ -51,7 +51,7 @@ export default function Nav() {
               {/* <WalletConnect /> */}
               <ConnectButton />
 
-              <Button onClick={toggleColorMode}>
+              <Button onClick={toggleColorMode} zIndex={'1'}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
 

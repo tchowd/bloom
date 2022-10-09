@@ -1,13 +1,13 @@
 import React from 'react'
 import NavbarNoWallet from '../components/NavbarNone'
 import Footer from '../components/Footer'
-import Subscribe from '../Homepage/Subscribe'
-import Testimonials from '../Homepage/Testimonials'
-import MainIntro from '../Homepage/MainIntro'
+import Subscribe from './Subscribe'
+import Testimonials from './Testimonials'
+import MainIntro from './MainIntro'
 import Info from './Info'
 import Features from './Features'
 
-function Homepage() {
+function Home() {
   return (
     <>
         <NavbarNoWallet />
@@ -22,4 +22,4 @@ function Homepage() {
   )
 }
 
-export default Homepage
+export default Home
