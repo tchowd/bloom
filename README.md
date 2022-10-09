@@ -2,23 +2,23 @@
 
 ## Vision
 
-Bloom is a platform built by builders for builders. The platform is bridging communication between the builders and the core developers to help both parties to build better products faster. Similiar to stackoverflow but for web3 development. It is built on web3 principles of community, by incentivizing contributors to help their peers bringing better products to the ecosystem. It is meant to advance developer experience and grow the builders community around your project.
-
+Bloom is a solution based platform built by builders for builders. It is meant to minimize your time on researching and spend it more on creating. The platform is bridging communication between the builders and the core developers to help both parties to build further, faster and more innovative. It caries the incentive mechanism for the recognized contributors for helping their peers to solve the issues. 
+- Biderectional communication between protocols and builders
+- Validated responses
+- No wait time to move on with implementation of new ideas
+- Incentive mechanism creates engaged community of builders helping to build the ecosystem
 
 
 ## Problem
-Currently to build on a new techology developers need to read an immense amount of documentation or search for answers in multiple unreliable sources. 
-There is a lack of clarity and reliability on sources of information. Sifting through forums or trying to connect with the team on their social channels time to get the answer is unclear, leaving them asking wen to build. At the same time companies need to allocate resources and time trying to answer often repetitive questions or updating documentation. That slows down the process for both builders and core teams
+Currently to build on a new techology you need to read an immense amount of documentation or search for answers in multiple unreliable sources. Teams need to allocate resources and time trying to answer often repetitive questions or end up directing people to read the documentation. It also takes debeloper's time from building to updating the documentation. That slows down the process for builders and core teams 
+For the developers there is a lack of clarity and reliability on sources of information. Sifting through forums or trying to connect with the team on their social channels to getting the answer is unclear, leaving them asking wen to build. And no incentive to contribute to the community
+
+For the teams, answering the question, especially technical takes developers  time from working on a project and requires additional resources to monitor multiple channels.
 
 For both parties time is spent ineeficiently instead of innovative.
-
 ## Solution
 Bloom is a solution based platform for builders, where they can find the answers in one place, validated by the community and verified by the project's core team. No more scrolling through multiple forums or channels. 
-Developers that contribute by answeering their peers get rewarded by the protocols. That way you are not only contributing to the ecosystem development but also get recognition from projects for your contribution. 
-- Validated responses
-- No wait time to move on with implementation of new ideas
-- Biderectional communication between protocols and builders
-- Incentive mechanism creates engaged community of builders helping to build the ecosystem
+Developers that contribute by answeering their peers get rewarded by the protocols. That way you are not only contributing to the ecosysytem development but also get recognition from projects for your contribution. 
 
 ## Experience:
 As a dev contributor:
@@ -55,6 +55,9 @@ simple, non-custodial auth infrastructure that enables Web3 wallets and applicat
 
 #### Ethereum Push Notification Service (PUSH) 
 we are using the decentralized communication & notification protocol for Web3. Using the protocol, both sponsors and developers can send on-chain or off-chain notifications tied to wallet addresses in a multichain, open, platform agnostic way- this is perfect considering we are using Polygon, Optimism and Harmony. This will provide efficient, open communication for sponsors to hear about the deliverables being met and developers to get notified wen funding
+
+####ENS
+The **Ethereum Name Service (ENS)** enables you to have a cross-platform web3 username and profile, to simplify crypto payments for any blockchain, and decentralized websites. ENS supports .ETH names natively, as well as importing DNS names you already own. ENS is integrated in over 300 services, including wallets, dapps, and browsers. We integrated **ENS** technology for authentication to sign into the account.
 
 ## Technologies
 
