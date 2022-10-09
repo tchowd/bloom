@@ -11,6 +11,7 @@ import {
   useColorModeValue,
   Stack,
   useColorMode,
+  Image,
   Center,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
@@ -35,9 +36,15 @@ export default function NavbarNone() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={useColorModeValue('purple.100', 'purple.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box>Logo</Box>
+        <Image
+                borderRadius="lg"
+                src='/static/bloom.png'
+                alt="some good alt text"
+                objectFit="contain"
+                width={'10rem'}
+              /> 
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>

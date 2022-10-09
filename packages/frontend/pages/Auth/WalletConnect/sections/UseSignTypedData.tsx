@@ -31,20 +31,25 @@ const value = {
   contents: 'Hello, Bob!'
 }
 
-export default function AccountSection() {
-  const { isLoading, sign, signature } = useSignTypedData()
-
-  function onSignTypedData() {
-    sign({ domain, value, types })
-  }
+export default function UseSignTypedData() {
+  const { data, error, isLoading, signTypedData } = useSignTypedData({ types, value, domain })
 
   return (
     <section>
-      <h1>Sign Typed Data</h1>
-      <button type="button" disabled={isLoading} onClick={onSignTypedData}>
-        Sign Typed Data
-      </button>
-      {signature ? <p>{signature}</p> : null}
+      <h1>useSignTypedData</h1>
+
+      <ul>
+        <li>
+          Typed data: <span>See example sourc code for typed data</span>
+        </li>
+        <li>
+          Signature: <span>{isLoading ? 'Loading...' : data}</span>
+        </li>
+        <li>
+          Error: <span>{error ? error.message : 'No Error'}</span>
+        </li>
+      </ul>
+      <button onClick={async () => signTypedData()}>Sign Typed Data</button>
     </section>
   )
 }

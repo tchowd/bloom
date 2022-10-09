@@ -17,15 +17,16 @@ const ref = useRef(null);
   return (
     <>
         <Text> sdf</Text>
-         <HStack style={{marginTop: '2rem'}}>
-            <HStack> 
+         <HStack style={{marginTop: '2rem' }}>
+
+            <HStack style={{ backgroundColor: 'red', overflow: 'scroll'}}> 
 
             <Box
                 position={'relative'}
                 rounded={'2xl'}
                 borderWidth='0.2rem'
                 borderColor='gray.200'
-                overflow={'hidden'}
+                overflow={''}
                 _hover={{boxShadow: 'lg'}}
             >
                     <Box w="100%">
@@ -44,7 +45,7 @@ const ref = useRef(null);
                 rounded={'2xl'}
                 borderWidth='0.2rem'
                 borderColor='gray.200'
-                overflow={'hidden'}
+                overflow={''}
                 _hover={{boxShadow: 'lg'}}
             >
                     <Box w="100%">
@@ -63,7 +64,7 @@ const ref = useRef(null);
                 rounded={'2xl'}
                 borderWidth='0.2rem'
                 borderColor='gray.200'
-                overflow={'hidden'}
+                overflow={''}
                 _hover={{boxShadow: 'lg'}}
             >
                     <Box w="100%">
@@ -82,7 +83,7 @@ const ref = useRef(null);
                 rounded={'2xl'}
                 borderWidth='0.2rem'
                 borderColor='gray.200'
-                overflow={'hidden'}
+                overflow={''}
                 _hover={{boxShadow: 'lg'}}
             >
                     <Box w="100%">
@@ -100,7 +101,7 @@ const ref = useRef(null);
                 rounded={'2xl'}
                 borderWidth='0.2rem'
                 borderColor='gray.200'
-                overflow={'hidden'}
+                overflow={''}
                 _hover={{boxShadow: 'lg'}}
             >
                     <Box w="100%">
@@ -118,7 +119,7 @@ const ref = useRef(null);
                 rounded={'2xl'}
                 borderWidth='0.2rem'
                 borderColor='gray.200'
-                overflow={'hidden'}
+                overflow={''}
                 _hover={{boxShadow: 'lg'}}
             >
                     <Box w="100%">

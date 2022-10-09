@@ -15,7 +15,8 @@ const Dashboard: NextPage = () => {
         <Box ml={{ base: 0, md: 60 }} p="4">
           <Container maxW="1260px">
             <Highlights />
-            <SecondTest />
+            {/* <SecondTest /> */}
+            <Projects />
           </Container>
         </Box>
 
