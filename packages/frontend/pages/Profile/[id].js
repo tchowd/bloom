@@ -8,7 +8,7 @@ import { client, getProfile, getPublications } from '../../api'
 export default function SelectedProfile() {
     // this will be the current state of the selected profile details
     const [profile, setProfile] = useState()
-    const [publications, setPublications] = useState()
+
 
     // router used to query the id from `Profiles`
     const router = useRouter()
