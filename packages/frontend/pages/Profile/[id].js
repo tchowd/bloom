@@ -2,12 +2,13 @@
 import { Image } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
-import { client, getProfile } from '../../api'
+import { client, getProfile, getPublications } from '../../api'
 // nothing new, just importing styles
 
 export default function SelectedProfile() {
     // this will be the current state of the selected profile details
     const [profile, setProfile] = useState()
+    const [publications, setPublications] = useState()
 
     // router used to query the id from `Profiles`
     const router = useRouter()
@@ -26,6 +27,9 @@ export default function SelectedProfile() {
         try {
             // changed the response name to profileResponse
             const profileRepsonse = await client.query(getProfile, { id }).toPromise()
+            const publicationsReponse = await client.query(getPublications, { id }).toPromise()
+            // expect to see an array of publication. note: some users may have 0
+            console.log('publications', publicationsReponse.data.publications.items)
             const profileData = profileRepsonse.data.profile
             // setting profile data
             setProfile(profileData)
