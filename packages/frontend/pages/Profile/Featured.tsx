@@ -5,10 +5,16 @@ import {
     Text,
     VStack,
     Image,
+    Flex, 
+    Heading, 
+    Spacer,
+    Link,
+    Divider
   } from '@chakra-ui/react';
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import InfiniteScroll from 'react-infinite-scroll-component';
+import { ArrowRightIcon } from '@chakra-ui/icons';
 
 function Projects() {
 
@@ -17,7 +23,19 @@ const ref = useRef(null);
 
   return (
     <>
-        <Text> sdf</Text>
+        <Flex>
+            <Heading as="h2" marginTop="5">
+                Recent Contributions
+            </Heading>
+            <Spacer />
+            <Link href='https://turja.substack.com'>
+            <Text marginTop='2rem' fontWeight={'bold'}>Learn more  
+                &nbsp;
+                <ArrowRightIcon w={3} h={3} /> 
+            </Text>
+            </Link>
+            </Flex> 
+            <Divider marginTop="5" marginBottom='2rem'/>
          <HStack style={{marginTop: '2rem' }}>
 
             <HStack style={{ overflow: 'scroll'}}> 
@@ -35,7 +53,7 @@ const ref = useRef(null);
                 src='/static/8.png'
                 alt="some good alt text"
                 objectFit="contain"
-                width={'1rem'}
+                width={'30rem'}
                 height={'20rem'}
                 overflow="hidden"
                 style={{borderRadius: '0.8rem'}}
@@ -46,6 +64,7 @@ const ref = useRef(null);
                     rounded='90px'
                     width="15rem"
                     >
+                        
                     </Box>
                     </Box>
             </Box>

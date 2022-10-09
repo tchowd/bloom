@@ -1,7 +1,9 @@
 import { useEnsName } from '@web3modal/react'
+import { useAccount } from '@web3modal/react'
 
 export default function UseEnsName() {
-  const address = '0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045'
+  const { address, connector, isConnected } = useAccount()
+  // const address2 = '0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045'
   const { data, isLoading, error, refetch } = useEnsName({ address })
 
   return (

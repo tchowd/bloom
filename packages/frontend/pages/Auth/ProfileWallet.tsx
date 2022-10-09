@@ -18,7 +18,6 @@ function ProfileWallet() {
     
         {/* <WalletConnect /> */}
         <UseAccount />
-
         <UseEnsAddress />
         <UseEnsAvatar />
         <UseEnsName />
@@ -26,7 +25,7 @@ function ProfileWallet() {
 
     
     </>
-  ) : (
+  ), (
     <ConnectButton />
   )
 }
