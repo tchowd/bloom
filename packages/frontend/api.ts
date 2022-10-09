@@ -531,3 +531,11 @@ query Publications ($id:ProfileId!) {
         }
     }
   `
+
+export const challenge = `
+query Challenge($address:Address!) { {
+    challenge(request: { address: $address }) {
+      text
+    }
+  }
+`

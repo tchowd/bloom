@@ -9,7 +9,6 @@ export default function SelectedProfile() {
     // this will be the current state of the selected profile details
     const [profile, setProfile] = useState()
 
-
     // router used to query the id from `Profiles`
     const router = useRouter()
     const { id } = router.query
