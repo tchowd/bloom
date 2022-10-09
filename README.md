@@ -2,7 +2,7 @@
 
 ## Vision
 
-Bloom is a solution based platform built by builders for builders. It is meant to minimize time on researching and spend it more on creating. The platform is bridging communication between the builders and the core developers to help both parties to build further, faster. It also meant to incentivize contributors for helping their peers to solve the issues. 
+Bloom is a solution based platform built by builders for builders. It is meant to minimize your time on researching and spend it more on creating. The platform is bridging communication between the builders and the core developers to help both parties to build further, faster and more innovative. It caries the incentive mechanism for the recognized contributors for helping their peers to solve the issues. 
 - Biderectional communication between protocols and builders
 - Validated responses
 - No wait time to move on with implementation of new ideas
@@ -55,6 +55,9 @@ simple, non-custodial auth infrastructure that enables Web3 wallets and applicat
 
 #### Ethereum Push Notification Service (PUSH) 
 we are using the decentralized communication & notification protocol for Web3. Using the protocol, both sponsors and developers can send on-chain or off-chain notifications tied to wallet addresses in a multichain, open, platform agnostic way- this is perfect considering we are using Polygon, Optimism and Harmony. This will provide efficient, open communication for sponsors to hear about the deliverables being met and developers to get notified wen funding
+
+####ENS
+The **Ethereum Name Service (ENS)** enables you to have a cross-platform web3 username and profile, to simplify crypto payments for any blockchain, and decentralized websites. ENS supports .ETH names natively, as well as importing DNS names you already own. ENS is integrated in over 300 services, including wallets, dapps, and browsers. We integrated **ENS** technology for authentication to sign into the account.
 
 ## Technologies
 
