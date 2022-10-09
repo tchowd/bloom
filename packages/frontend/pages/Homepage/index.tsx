@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import NavbarNoWallet from '../components/NavbarNone'
 import Footer from '../components/Footer'
 import Subscribe from '../Homepage/Subscribe'
 import Testimonials from '../Homepage/Testimonials'
@@ -10,11 +10,12 @@ import Features from './Features'
 function Homepage() {
   return (
     <>
-        <Navbar />
+        <NavbarNoWallet />
         <MainIntro />
         <Testimonials />
-        <Info />
         <Features />
+        <Info />
+        {/* <Features /> */}
         <Subscribe />
         <Footer />
     </>

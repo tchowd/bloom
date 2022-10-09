@@ -18,7 +18,23 @@ import {
 } from '@rainbow-me/rainbowkit';
 
 import { useIsMounted } from '../hooks';
+import { useEffect, useState } from "react";
+import { Web3Auth } from "@web3auth/web3auth";
+// Get projectID at https://cloud.walletconnect.com
 
+
+  import type { ConfigOptions } from '@web3modal/react'
+  import { Web3Modal } from '@web3modal/react'
+  
+  const config: ConfigOptions = {
+    projectId: '4037d5a58dd197fdcf7d0fa94f32787b',
+    theme: 'dark',
+    accentColor: 'default',
+    ethereum: {
+      appName: 'web3Modal'
+    }
+  }
+  
 // Get environment variables
 const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID as string;
 // const infuraId = process.env.NEXT_PUBLIC_INFURA_ID as string;
@@ -54,18 +70,18 @@ const wagmiClient = createClient({
   provider,
 });
 
+
 const App = ({ Component, pageProps }: AppProps) => {
   const isMounted = useIsMounted();
 
   if (!isMounted) return null;
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider coolMode chains={chains}>
-        <NextHead>
-          <title>create-web3</title>
-        </NextHead>
+      <RainbowKitProvider coolMode chains={chains} >
+        
         <ChakraProvider>
           <Component {...pageProps} />
+          <Web3Modal config={config} />
         </ChakraProvider>
       </RainbowKitProvider>
     </WagmiConfig>
