@@ -2,7 +2,7 @@
 import { Image } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
-import { client, getProfile, getPublications } from '../../api'
+import { client, getProfile, getPublications, getRecommendedProfiles } from '../../api'
 // nothing new, just importing styles
 
 export default function SelectedProfile() {
@@ -36,6 +36,21 @@ export default function SelectedProfile() {
             console.log('error fetching profile...', e)
         }
     }
+
+    // we want to called fetchRecommendedProfiles on every load
+    useEffect(() => {
+        fetchRecommendedProfiles()
+    }, [])
+
+    async function fetchRecommendedProfiles() {
+        try {
+            const response = await client.query(getRecommendedProfiles).toPromise()
+            console.log(response)
+        } catch (e) {
+            console.log(e)
+        }
+    }
+
 
     // same reason as before, if we don't have a profile loaded, we don't want to run anything
     if (!profile) return null
