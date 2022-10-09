@@ -13,7 +13,8 @@ const Profile: NextPage = () => {
           <ProfileCard />
           <Featured />
         </Box>
-    </>
+        </>
+
   )
 }
 
