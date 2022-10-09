@@ -3,9 +3,9 @@ import type { NextPage } from 'next'
 import Sidebar from '../Dashboard/Sidebar'
 
 const Personal: NextPage = () => {
-    return (
+  return (
     <>
-        <Sidebar children={undefined} />
+      <Sidebar children={undefined} />
     </>
   )
 }
