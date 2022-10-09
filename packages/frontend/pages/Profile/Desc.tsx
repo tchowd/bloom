@@ -9,7 +9,7 @@ function Desc() {
         rounded={'2xl'}
         borderWidth='0.1rem'
         padding={'1.2rem'}
-        width='10rem'
+        width='30rem'
         borderColor='gray.200'
         overflow={'hidden'}
         _hover={{ boxShadow: 'lg' }}

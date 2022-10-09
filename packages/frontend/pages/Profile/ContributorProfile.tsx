@@ -39,7 +39,7 @@ function CompanyProfile() {
                     />
                     <VStack>
                     <Text marginTop={'2rem'} marginRight={'28rem'} fontSize='5xl' as='b'> 
-                    Xian
+                      Xian
                     </Text>
                     <Text  marginLeft={'0rem'}> 
                     <UseAccount />
