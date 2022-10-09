@@ -40,11 +40,11 @@ export default function CallToActionWithVideo() {
                 bg: 'purple.400',
                 zIndex: -1,
               }}>
-              Learn, Build
+              Learn, Earn,
             </Text>
-            {/* <br /> */}
+            <br />
             <Text as={'span'} color={'purple.400'}>
-               // Bloom
+              Build, Bloom
             </Text>
           </Heading>
           <Text color={'gray.500'}>
